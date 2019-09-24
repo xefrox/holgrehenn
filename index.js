@@ -33,5 +33,5 @@ client.on('message', message => {
   }
 })
 
-client.login(process.env.BOT_TOKEN)
+client.login('NjI1OTAzODMyNTAwNjY2Mzk4.XYmU9g.YrhhBUiSipxl9tdNsUmK4OkP-gE')
 
