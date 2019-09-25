@@ -1,6 +1,8 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 const mysql = require('mysql')
+
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
 })
@@ -38,10 +40,10 @@ client.on('message',msg=>{
         if (rows.length>0) {
         const embed = new Discord.RichEmbed()
           .setTitle('About item')
-          .setDescription(rows[0].Name)
+          .setDescription(rows[0].SynthName)
           .setThumbnail('https://img.xdcdn.net/ro/moniqi/item_40055.png')
           .setColor(0x00ae86)
-          .addField('Quantity', rows[0].Desc )
+          .addField('Description', rows[0].Desc )
           .addField('Material', rows[0].Material)
           .addField('Zeny', rows[0].Zeny)
 
