@@ -35,7 +35,7 @@ client.on('message',msg=>{
     // console.log(arg)
     // console.log(args)
     // msg.reply(args)
-    conn.query(`SELECT * FROM Syntesis WHERE Name LIKE '${args}%'` ,(err,rows) => {
+    conn.query(`SELECT * FROM Synthesis WHERE Name LIKE '${args}%'` ,(err,rows) => {
       if (err) throw err
         if (rows.length>0) {
         const embed = new Discord.RichEmbed()
