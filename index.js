@@ -41,7 +41,7 @@ client.on('message',msg=>{
         const embed = new Discord.RichEmbed()
           .setTitle('About item')
           .setDescription(rows[0].SynthName)
-          .setThumbnail('https://img.xdcdn.net/ro/moniqi/item_40055.png')
+          .setThumbnail(rows[0].imgUrl)
           .setColor(0x00ae86)
           .addField('Description', rows[0].Desc )
           .addField('Material', rows[0].Material)
